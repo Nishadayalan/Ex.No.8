@@ -1,55 +1,401 @@
-## Exp 8: Reproducing an Image Using Prompts for Image Generation
+# Experiment 8: Prompt Engineering for AI Workflow Automation
 
-# Date :
-# Reg. No. 
+### Date: 05-09-2026
+### Registration no.: 212223230143
 
-## Aim:
-To demonstrate the ability of text-to-image generation tools to reproduce an existing image by crafting precise prompts. The goal is to identify key elements within the image and use these details to generate an image as close as possible to the original.
+## Aim
 
-## Procedure:
-1.	Analyze the Given Image:
-○	Examine the image carefully, noting key elements such as:
-■	Objects/Subjects (e.g., people, animals, objects)
-■	Colors (e.g., dominant hues, contrasts)
-■	Textures (e.g., smooth, rough, glossy)
-■	Lighting (e.g., bright, dim, shadows)
-■	Background (e.g., outdoor, indoor, simple, detailed)
-■	Composition (e.g., focal points, perspective)
-■	Style (e.g., realistic, artistic, cartoonish)
-2.	Create the Basic Prompt:
-○	Write an initial, simple description of the image. For example, if the image shows a landscape, the prompt could be "A serene landscape with mountains and a river."
-3.	Refine the Prompt with More Detail:
-○	Add specific details such as colors, mood, and time of day. For example: "A serene landscape during sunset with purple mountains, a calm river reflecting the colors of the sky, and a few trees along the shore."
-4.	Identify Style and Artistic Influences:
-○	If the image has a particular style (e.g., impressionist painting, realistic photography, minimalistic), include that in the prompt. For example: "A serene landscape in the style of a watercolor painting with soft, blended colors."
-5.	Adjust and Fine-tune:
-○	Refine the prompt further by adding specific instructions about elements like textures, weather conditions, or any other distinctive features in the image. For example: "A serene landscape during sunset with purple mountains, a calm river reflecting the colors of the sky, a few trees along the shore, and soft, pastel tones in the clouds."
-6.	Generate the Image:
-○	Use the crafted prompt to generate the image in a text-to-image model (e.g., DALL·E, Stable Diffusion, MidJourney).
-7.	Compare the Generated Image with the Original:
-○	Assess how closely the generated image matches the original in terms of colors, composition, subject, and style. Note the differences and refine the prompt if necessary.
-## Tools/LLMs for Image Generation:
-●	DALL·E (by OpenAI): A text-to-image generation tool capable of creating detailed images from textual prompts.
-○	Website: DALL·E
-●	Stable Diffusion: An open-source model for generating images from text prompts, known for its flexibility and customizable outputs.
-○	Website: Stable Diffusion
-●	MidJourney: A popular AI tool for generating visually striking and creative images based on text descriptions.
-○	Website: MidJourney
-## Instructions:
-1.	Examine the Given Image: Study the image to understand its key features—objects, colors, lighting, composition, and any stylistic choices.
-2.	Write the Basic Prompt: Start with a simple description of the primary elements in the image (e.g., "A sunset over a mountain range").
-3.	Refine and Add Details: Improve the prompt by incorporating specifics like colors, shapes, textures, and style (e.g., "A sunset over purple mountains, with a golden sky and a calm river flowing through the valley").
-4.	Use the Selected Tool: Choose an image generation model (e.g., DALL·E, Stable Diffusion, or MidJourney) and input the refined prompt.
-5.	Iterate and Adjust: If the initial result isn't quite right, adjust the prompt further based on the differences observed between the generated and original image.
-6.	Save and Document: Save the generated image and document your prompt alongside any observations on how the output compares to the original.
-## Deliverables:
-1.	The Original Image: Provided image for reference.
-2.	The Final Generated Image: The image created using your refined prompt.
-3.	Prompts Used: The text prompts created during the experiment.
-4.	Comparison Report: A report highlighting the differences and similarities between the original and generated images, along with any adjustments made to the prompt.
+To design and demonstrate an AI-powered workflow that automates common documentation and management tasks using structured prompts.
 
-## Conclusion:
-By using detailed and well-crafted prompts, text-to-image generation models can be effective in reproducing an image closely. The quality of the generated image depends on how accurately the prompt describes the image's key elements. The experiment demonstrates the importance of prompt refinement and iteration when working with AI tools to achieve desired outcomes. With practice, the model can generate images that closely match real-world visuals, which is useful for creative and practical applications.
+---
 
+## Problem Statement
 
-## IMAGES: (CHOOSE ANY TWO BELOW AND REPRODUCE)
+Managing a college symposium involves several repetitive activities such as writing emails, preparing meeting minutes, planning tasks, creating schedules, documenting requirements, and generating frequently asked questions.
+
+Performing these tasks manually requires considerable time and may result in inconsistent documentation.
+
+This experiment uses **Prompt Engineering** to create structured prompts that automate these activities using an AI system.
+
+---
+
+## Engineering Example
+
+### College Symposium Management
+
+A technical symposium called **TechNova 2026** is considered as the engineering example.
+
+### Event Details
+
+| Parameter             | Details                                                  |
+| --------------------- | -------------------------------------------------------- |
+| Event Name            | TechNova 2026                                            |
+| Event Type            | College Technical Symposium                              |
+| Date                  | 20 September 2026                                        |
+| Venue                 | College Auditorium and Seminar Halls                     |
+| Expected Participants | 500 Students                                             |
+| Events                | Paper Presentation, Coding Contest, Project Expo, Quiz   |
+| Teams                 | Registration, Technical, Publicity, Hospitality, Finance |
+
+---
+
+# Workflow
+
+The proposed AI workflow follows these steps:
+
+```text
+Symposium Information
+        ↓
+Structured Prompt
+        ↓
+AI Processing
+        ↓
+Content Generation
+        ↓
+Review and Validation
+        ↓
+Final Document
+```
+
+The workflow automates six major activities:
+
+1. Email Writing
+2. Meeting Minutes
+3. Task Planning
+4. Project Scheduling
+5. Requirement Documentation
+6. FAQ Generation
+
+---
+
+# 1. Email Writing
+
+## Objective
+
+To automatically generate professional emails for students, participants, coordinators, sponsors, and volunteers.
+
+## Structured Prompt
+
+```text
+Role:
+You are a professional college event communication assistant.
+
+Context:
+TechNova 2026 is a technical symposium organized by our college
+on 20 September 2026.
+
+Task:
+Write an invitation email for college students.
+
+Requirements:
+- Include event name and date.
+- Mention major events.
+- Use a professional but friendly tone.
+- Include registration information.
+- Keep the email below 200 words.
+
+Output:
+Subject + Email Body
+```
+
+## Sample Output
+
+**Subject:** Invitation to TechNova 2026 – Technical Symposium
+
+Dear Students,
+
+We are pleased to invite you to TechNova 2026, our upcoming technical symposium on 20 September 2026.
+
+The symposium includes Paper Presentation, Coding Contest, Project Expo, and Technical Quiz. Students can participate individually or as teams depending on the event requirements.
+
+Interested students are requested to complete their registration before the specified deadline.
+
+We look forward to your enthusiastic participation.
+
+Regards,
+TechNova 2026 Organizing Team
+
+---
+
+# 2. Meeting Minutes
+
+## Objective
+
+To convert unstructured meeting discussions into formal and organized Minutes of Meeting (MoM).
+
+## Input
+
+```text
+Meeting Date: 10 September 2026
+
+Discussion:
+- Registration team must finalize participant form.
+- Publicity team will create posters.
+- Technical team will test coding platform.
+- Hospitality team will arrange refreshments.
+- Finance team will finalize the budget.
+- Next meeting will be held on 15 September.
+```
+
+## Structured Prompt
+
+```text
+Role:
+You are an administrative documentation assistant.
+
+Task:
+Convert the following meeting discussion into formal Minutes of Meeting.
+
+Include:
+1. Meeting date
+2. Main discussion points
+3. Decisions taken
+4. Action items
+5. Responsible team
+6. Deadline
+
+Use a clear table wherever appropriate.
+```
+
+## Sample Output
+
+| Action Item                | Responsible Team | Deadline |
+| -------------------------- | ---------------- | -------- |
+| Finalize registration form | Registration     | 12 Sept  |
+| Design promotional posters | Publicity        | 13 Sept  |
+| Test coding platform       | Technical        | 14 Sept  |
+| Arrange refreshments       | Hospitality      | 18 Sept  |
+| Finalize budget            | Finance          | 14 Sept  |
+
+---
+
+# 3. Task Planning
+
+## Objective
+
+To divide the symposium activities into manageable tasks and assign responsibilities to different teams.
+
+## Structured Prompt
+
+```text
+Role:
+You are a project management assistant.
+
+Task:
+Create a task plan for organizing a college technical symposium.
+
+Teams:
+Registration, Technical, Publicity, Hospitality, Finance.
+
+For each task provide:
+- Task name
+- Responsible team
+- Priority
+- Deadline
+- Expected output
+
+Organize the tasks according to priority.
+```
+
+## Sample Output
+
+| Task                     | Team         | Priority | Deadline |
+| ------------------------ | ------------ | -------- | -------- |
+| Create registration form | Registration | High     | Sept 10  |
+| Publish event poster     | Publicity    | High     | Sept 11  |
+| Confirm judges           | Technical    | High     | Sept 12  |
+| Arrange refreshments     | Hospitality  | Medium   | Sept 18  |
+| Finalize budget          | Finance      | High     | Sept 14  |
+
+---
+
+# 4. Project Scheduling
+
+## Objective
+
+To generate a timeline for completing all symposium activities before the event date.
+
+## Structured Prompt
+
+```text
+Role:
+You are an event scheduling assistant.
+
+Event Date:
+20 September 2026
+
+Create a schedule from 1 September to 20 September.
+
+Include:
+- Activity
+- Start date
+- End date
+- Responsible team
+- Dependency
+
+Ensure that important tasks are completed before dependent activities begin.
+```
+
+## Sample Output
+
+| Activity           | Start Date | End Date | Responsible Team |
+| ------------------ | ---------- | -------- | ---------------- |
+| Event Planning     | Sept 1     | Sept 3   | Core Team        |
+| Registration Setup | Sept 4     | Sept 6   | Registration     |
+| Publicity Campaign | Sept 7     | Sept 15  | Publicity        |
+| Judge Confirmation | Sept 8     | Sept 12  | Technical        |
+| Venue Preparation  | Sept 16    | Sept 19  | Hospitality      |
+| Final Testing      | Sept 19    | Sept 19  | Technical        |
+| Symposium          | Sept 20    | Sept 20  | All Teams        |
+
+---
+
+# 5. Requirement Documentation
+
+## Objective
+
+To automatically create a structured requirement document for the symposium management system.
+
+## Structured Prompt
+
+```text
+Role:
+You are a requirements analyst.
+
+Project:
+College Technical Symposium – TechNova 2026
+
+Create a requirement document containing:
+
+1. Project objective
+2. Functional requirements
+3. Non-functional requirements
+4. Hardware requirements
+5. Software requirements
+6. User roles
+7. Constraints
+
+Present the requirements clearly using headings and tables.
+```
+
+## Sample Output
+
+### Functional Requirements
+
+* Student registration
+* Event selection
+* Participant management
+* Attendance tracking
+* Certificate generation
+* Event result management
+
+### Non-Functional Requirements
+
+* Easy to use
+* Secure participant data
+* Reliable during registration
+* Fast response time
+* Mobile-friendly interface
+
+### User Roles
+
+* Administrator
+* Event Coordinator
+* Volunteer
+* Participant
+* Judge
+
+---
+
+# 6. FAQ Generation
+
+## Objective
+
+To automatically generate frequently asked questions and answers for symposium participants.
+
+## Structured Prompt
+
+```text
+Role:
+You are a college event support assistant.
+
+Context:
+TechNova 2026 is a college technical symposium.
+
+Task:
+Generate 10 frequently asked questions for participants.
+
+Cover:
+- Registration
+- Eligibility
+- Event timings
+- Team size
+- Venue
+- Certificates
+- Food
+- Contact information
+
+Provide each question with a short and clear answer.
+```
+
+## Sample Output
+
+### Q1. Who can participate in TechNova 2026?
+
+Students who meet the eligibility requirements can participate.
+
+### Q2. What events are available?
+
+Paper Presentation, Coding Contest, Project Expo, and Technical Quiz.
+
+### Q3. Where will the symposium be conducted?
+
+The event will be conducted in the college auditorium and seminar halls.
+
+### Q4. Will participants receive certificates?
+
+Yes, eligible participants will receive participation certificates.
+
+---
+
+# Prompt Engineering Techniques Used
+
+| Technique          | Application                                                                    |
+| ------------------ | ------------------------------------------------------------------------------ |
+| Role Prompting     | Defines the AI's role as an event manager, analyst, or communication assistant |
+| Context Setting    | Provides relevant symposium information                                        |
+| Clear Instructions | Specifies exactly what the AI should generate                                  |
+| Output Formatting  | Requests tables, headings, and structured responses                            |
+| Constraints        | Controls word count and required information                                   |
+| Few-Shot Prompting | Examples can be provided to guide the expected output                          |
+| Task Decomposition | Breaks a large management task into smaller tasks                              |
+
+---
+
+---
+
+# Result
+
+The AI workflow successfully demonstrates the automation of:
+
+* Email Writing
+* Meeting Minutes
+* Task Planning
+* Project Scheduling
+* Requirement Documentation
+* FAQ Generation
+
+using structured prompts.
+
+---
+
+# Conclusion
+
+Prompt Engineering can transform an AI system from a simple text-generation tool into a useful **workflow automation assistant**.
+
+By providing a clear **role, context, task, constraints, and output format**, AI can generate consistent and structured content for different stages of college symposium management.
+
+The experiment demonstrates that structured prompting can reduce manual effort, improve productivity, and support efficient management of complex activities.
+
+---
+

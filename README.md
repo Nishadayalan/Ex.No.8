@@ -391,11 +391,12 @@ using structured prompts.
 
 # Conclusion
 
-Prompt Engineering can transform an AI system from a simple text-generation tool into a useful **workflow automation assistant**.
+Prompt Engineering can transform an AI system from a simple text-generation tool into a useful workflow automation assistant.
 
-By providing a clear **role, context, task, constraints, and output format**, AI can generate consistent and structured content for different stages of college symposium management.
+By providing a clear role, context, task, constraints, and output format, AI can generate consistent and structured content for different stages of college symposium management.
 
 The experiment demonstrates that structured prompting can reduce manual effort, improve productivity, and support efficient management of complex activities.
+
 
 ---
 
